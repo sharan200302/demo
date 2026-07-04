@@ -1,0 +1,26 @@
+{
+	"name": "DS_SQL_AGENCY",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_SQLDB",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "AgencyID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "AgencyName",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "AgencyMaster"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
